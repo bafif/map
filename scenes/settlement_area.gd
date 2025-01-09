@@ -36,11 +36,3 @@ func _on_mouse_exited() -> void:
 	for node in get_children():
 		if node.is_class("Polygon2D"):
 			node.color = Color(1,1,1,0)
-
-func on_save_game(saved_data:Array[SavedData]):
-	var list: SavedData
-	list.scene = scene_file_path
-	saved_data.append(list)
-
-func on_load_game(saved_data:SavedData):
-	pass

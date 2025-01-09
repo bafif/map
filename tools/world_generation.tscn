@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvngn3tmyxh1b"]
+
+[ext_resource type="Script" path="res://tools/world_generation.gd" id="1_42xlf"]
+[ext_resource type="Texture2D" uid="uid://bwu15to5nnv06" path="res://map/provinces.bmp" id="2_toxef"]
+
+[node name="WorldGeneration" type="Node"]
+script = ExtResource("1_42xlf")
+
+[node name="Settlements_Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_toxef")
