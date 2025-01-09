@@ -60,7 +60,7 @@ func create_settlements() -> void:
 		save_settle.name = settlements_dict[settlement_code]
 		
 		if not current%100:
-			print("generated " + str(current) + "settlements from " + total)
+			print("generated " + str(current) + " settlements from " + total)
 		current = current + 1
 		
 		var settlement = settlement_scene.instantiate()

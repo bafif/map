@@ -9,3 +9,5 @@ script = ExtResource("1_pvejw")
 [node name="Settlements_Sprite" type="Sprite2D" parent="."]
 texture = ExtResource("2_hlajx")
 centered = false
+
+[node name="Settlements" type="Node2D" parent="."]
