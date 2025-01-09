@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4a570mdfjo23"]
+
+[ext_resource type="Script" path="res://scenes/settlement_polygon.gd" id="1_yl8hu"]
+
+[node name="SettlementPolygon" type="Polygon2D" groups=["world_saving"]]
+script = ExtResource("1_yl8hu")

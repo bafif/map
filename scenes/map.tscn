@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dqau732nupej"]
+
+[ext_resource type="Script" path="res://scenes/map.gd" id="1_pvejw"]
+[ext_resource type="Texture2D" uid="uid://bwu15to5nnv06" path="res://map/provinces.bmp" id="2_hlajx"]
+
+[node name="Map" type="Node2D"]
+script = ExtResource("1_pvejw")
+
+[node name="Settlements_Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_hlajx")
+centered = false
