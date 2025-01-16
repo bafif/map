@@ -21,7 +21,7 @@ func load_settlements() -> void:
 	print("Files loaded.\n")	
 	for saved_settle in saved_map.saved_settlements:
 		if not current%100:
-			print("loaded " + str(current) + "settlements from" + total)
+			print("loaded " + str(current) + " settlements from " + total)
 		current = current + 1
 		
 		var settlement = settlement_scene.instantiate()

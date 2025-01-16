@@ -1,10 +1,11 @@
 class_name WorldGeneration
 extends Node
 
-@onready var Settlements_Sprite = $Settlements_Sprite
+@onready var Settlements_Sprite: Sprite2D = $Settlements_Sprite as Sprite2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	#create_json(Settlements_Sprite.get_texture().get_image())
 	create_settlements()
 
 func create_settlements() -> void:
@@ -69,3 +70,13 @@ func export_json(path: String, dict: Dictionary) -> void:
 	var file := FileAccess.open(path, FileAccess.WRITE)
 	var json = JSON.stringify(dict, "\t")
 	file.store_string(json)
+	print("Data saved")
+
+func create_json(image: Image) -> void:
+	var regions: Dictionary = import_json("res://map/definition.json")
+	for y in range(image.get_height()):
+		for x in range(image.get_width()):
+			var pixel_color = "#" + str(image.get_pixel(int(x), int(y)).to_html(false))
+			if pixel_color not in regions:
+				regions[pixel_color] = pixel_color
+	export_json("res://map/definition_new.json", regions)

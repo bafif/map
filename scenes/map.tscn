@@ -1,7 +1,24 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqau732nupej"]
+[gd_scene load_steps=9 format=3 uid="uid://dqau732nupej"]
 
 [ext_resource type="Script" path="res://scenes/map.gd" id="1_pvejw"]
-[ext_resource type="Texture2D" uid="uid://bwu15to5nnv06" path="res://map/provinces.bmp" id="2_hlajx"]
+[ext_resource type="Texture2D" uid="uid://b7sbrn47cxii4" path="res://map/provinces.bmp" id="2_hlajx"]
+[ext_resource type="Script" path="res://scenes/main_camera.gd" id="3_h8x3r"]
+[ext_resource type="Texture2D" uid="uid://bvvby3dast7st" path="res://pacman.png" id="4_f2s8v"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4l00y"]
+blend_mode = 1
+
+[sub_resource type="LabelSettings" id="LabelSettings_w6q1d"]
+font_size = 8
+font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_ghsmq"]
+blend_mode = 2
+
+[sub_resource type="LabelSettings" id="LabelSettings_5u0p2"]
+line_spacing = 0.0
+font_size = 8
+font_color = Color(1, 0, 1, 1)
 
 [node name="Map" type="Node2D"]
 script = ExtResource("1_pvejw")
@@ -11,3 +28,61 @@ texture = ExtResource("2_hlajx")
 centered = false
 
 [node name="Settlements" type="Node2D" parent="."]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+offset_left = 1682.0
+offset_top = 17.0
+offset_right = 1734.0
+offset_bottom = 77.0
+scale = Vector2(4.12002, 3.28)
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/PanelContainer/MarginContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+material = SubResource("CanvasItemMaterial_4l00y")
+layout_mode = 2
+texture = ExtResource("4_f2s8v")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "Epic
+"
+label_settings = SubResource("LabelSettings_w6q1d")
+vertical_alignment = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+material = SubResource("CanvasItemMaterial_ghsmq")
+layout_mode = 2
+texture = ExtResource("4_f2s8v")
+expand_mode = 5
+stretch_mode = 5
+
+[node name="Label2" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(10, 10)
+layout_direction = 2
+layout_mode = 2
+text = "NOT Epic
+"
+label_settings = SubResource("LabelSettings_5u0p2")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Main_Camera" type="Camera2D" parent="."]
+anchor_mode = 0
+zoom = Vector2(2, 2)
+limit_smoothed = true
+position_smoothing_enabled = true
+script = ExtResource("3_h8x3r")
