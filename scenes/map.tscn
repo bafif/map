@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://dqau732nupej"]
 
 [ext_resource type="Script" path="res://scenes/map.gd" id="1_pvejw"]
-[ext_resource type="Texture2D" uid="uid://b7sbrn47cxii4" path="res://map/provinces.bmp" id="2_hlajx"]
-[ext_resource type="Script" path="res://scenes/main_camera.gd" id="3_h8x3r"]
+[ext_resource type="Texture2D" uid="uid://b7sbrn47cxii4" path="res://map/continents.bmp" id="2_hlajx"]
 [ext_resource type="Texture2D" uid="uid://bvvby3dast7st" path="res://pacman.png" id="4_f2s8v"]
+[ext_resource type="Script" path="res://system/MapCamera2D.gd" id="4_u347c"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4l00y"]
 blend_mode = 1
@@ -85,4 +85,4 @@ anchor_mode = 0
 zoom = Vector2(2, 2)
 limit_smoothed = true
 position_smoothing_enabled = true
-script = ExtResource("3_h8x3r")
+script = ExtResource("4_u347c")
