@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgf1s4cjpnivv"
-path="res://.godot/imported/provinces.bmp-45055aa7cb180bd66e0eec38773d6005.ctex"
+uid="uid://b7sbrn47cxii4"
+path="res://.godot/imported/continents.bmp-4ae1f0844533c5a79f425ec352340de8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://map/provinces.bmp"
-dest_files=["res://.godot/imported/provinces.bmp-45055aa7cb180bd66e0eec38773d6005.ctex"]
+source_file="res://map/continents.bmp"
+dest_files=["res://.godot/imported/continents.bmp-4ae1f0844533c5a79f425ec352340de8.ctex"]
 
 [params]
 
