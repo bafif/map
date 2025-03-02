@@ -1,4 +1,4 @@
-class_name SavedSettlement
+class_name SavedLandform
 
 extends SavedData
 

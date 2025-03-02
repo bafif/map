@@ -25,7 +25,7 @@ extends Camera2D
 ## If [code]true[/code], the map can be dragged while holding the left mouse button.
 @export var drag := true
 ## Slide after dragging: multiplies the final drag movement each second (set to 0 to stop immediately).
-@export_range(0, 1) var drag_inertia := 0.1
+@export_range(0, 1) var drag_inertia := 0.05
 
 var _tween_offset
 var _tween_zoom
