@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cn3fr4hhf5lrl"]
 
-[ext_resource type="Script" path="res://scenes/settlement_area.gd" id="1_mpc0n"]
+[ext_resource type="Script" uid="uid://chroeqgv1gafe" path="res://scenes/settlement_area.gd" id="1_mpc0n"]
 
 [node name="SettlementArea" type="Area2D"]
 script = ExtResource("1_mpc0n")

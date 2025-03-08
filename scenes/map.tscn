@@ -1,9 +1,9 @@
 [gd_scene load_steps=9 format=3 uid="uid://dqau732nupej"]
 
-[ext_resource type="Script" path="res://scenes/map.gd" id="1_pvejw"]
+[ext_resource type="Script" uid="uid://bxdcy5fgbjogi" path="res://scenes/map.gd" id="1_pvejw"]
 [ext_resource type="Texture2D" uid="uid://d16n8olqoa2lc" path="res://map/provinces.bmp" id="2_j327y"]
 [ext_resource type="Texture2D" uid="uid://bvvby3dast7st" path="res://pacman.png" id="4_f2s8v"]
-[ext_resource type="Script" path="res://system/MapCamera2D.gd" id="4_u347c"]
+[ext_resource type="Script" uid="uid://blsnxeoph0vq5" path="res://system/MapCamera2D.gd" id="4_u347c"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4l00y"]
 blend_mode = 1

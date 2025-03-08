@@ -24,7 +24,7 @@ resources_spreadsheet_view/resource_cell_label_mode=1
 
 config/name="godot-mapa-dnd"
 run/main_scene="res://scenes/map.tscn"
-config/features=PackedStringArray("4.3", "GL Compatibility")
+config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.403922, 0, 0.141176, 1)
 
 [autoload]

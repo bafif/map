@@ -2,34 +2,34 @@
   "column_properties": {
     "res://example/Items/items/": {
       "resource_local_to_scene": {
-        "visibility": 1
+        "visibility": 1.0
       },
       "resource_name": {
-        "visibility": 1
+        "visibility": 1.0
       }
     },
     "res://example/Random Upgrades/icons/": {
       "resource_local_to_scene": {
-        "visibility": 0
+        "visibility": 0.0
       },
       "resource_name": {
-        "visibility": 0
+        "visibility": 0.0
       }
     },
     "res://map/": {
       "resource_local_to_scene": {
-        "visibility": 0
+        "visibility": 0.0
       },
       "resource_name": {
-        "visibility": 0
+        "visibility": 0.0
       }
     },
     "res://scenes/": {
       "resource_local_to_scene": {
-        "visibility": 0
+        "visibility": 0.0
       },
       "resource_name": {
-        "visibility": 0
+        "visibility": 0.0
       }
     }
   },
