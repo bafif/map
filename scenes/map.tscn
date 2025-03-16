@@ -24,6 +24,7 @@ font_color = Color(1, 0, 1, 1)
 script = ExtResource("1_pvejw")
 
 [node name="Settlements_Sprite" type="Sprite2D" parent="."]
+texture_filter = 1
 texture = ExtResource("2_j327y")
 centered = false
 
